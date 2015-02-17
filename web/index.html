@@ -76,25 +76,28 @@
         </div>
         <!-- BEGIN SERVICES --> 
         <div class="container">
-            <div class="row">
-               <h1>Serivicios</h1>
+            <div class="row content">
+              <div class="col-sm-12">
+                  <h1>Servicios</h1>
+              </div>
+               
                 <div class="col-sm-3 col-md 3">
-                    <span class="cube">VTS</span>
+                    <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
                     <h5>Análisis</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum laboriosam nostrum ut eos consectetur, sunt recusandae rerum sint libero necessitatibus qui, dolor eveniet. Quaerat obcaecati placeat impedit, reprehenderit error reiciendis?</p>
                 </div>
                 <div class="col-sm-3 col-md 3">
-                    <span class="cube">VTS</span>
+                    <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
                     <h5>Implementación</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque non, numquam distinctio! Culpa pariatur, placeat at corporis eligendi perferendis accusantium debitis recusandae vero ducimus reprehenderit laudantium, dolore aliquid cupiditate aliquam!</p>
                 </div>
                 <div class="col-sm-3 col-md 3">
-                    <span class="cube">VTS</span>
+                    <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
                     <h5>Troubleshooting</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet blanditiis explicabo iste ipsam, quos repellendus provident, numquam ab harum maiores magnam deleniti, delectus temporibus corporis. Culpa, nam assumenda provident iure!</p>
                 </div>
                 <div class="col-sm-3 col-md 3">
-                    <span class="cube">VTS</span>
+                    <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
                     <h5>Otros</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, officia aliquam commodi fugiat sequi cupiditate. Quod ratione repudiandae, atque excepturi, placeat cum eum impedit nulla natus qui rem odio. Eos.</p>
                 </div>
@@ -103,7 +106,7 @@
         <!-- END/SERVICES -->
         <!-- BEGIN/ABOUT US -->
         <div class="container">
-            <div class="row">
+            <div class="row content">
                 <h1>Nosotros</h1>
                 <h4>VTS Company</h4>
                 <p>Todas las soluciones que manejamos son lleve en mano, para su comodidad. <br /> Como adicional, también realizamos servicio de análisis, Diseño, Consultoría, Implementación y Troubleshooting para tecnologías de Cisco Networking. Telefonía IP, Ruteo y Ambientes virtuales. En el caso de Troubleshooting, no incluye appliance de EMC, ya que ésto debe ser directamente con el fabricante.</p>
@@ -112,7 +115,7 @@
         <!-- END/ABOUT US -->
         <!-- BEGIN/PRODUCTS -->
         <div class="container">
-            <div class="row">
+            <div class="row content">
                 <h1>Productos</h1>
                 <div class="row">
                     <div class="col-sm-4 col-md 4"><img src="img/productos/cisco.jpg" alt="" class="img-responsive"></div>
@@ -135,7 +138,7 @@
         <!-- END/PRODUCTS -->
         <!-- BEGIN/CLIENTS -->
         <div class="container">
-                <div class="row"><h1>Clientes</h1></div>
+                <div class="row content"><h1>Clientes</h1></div>
                 <div class="row">
                     <div class="col-sm-3 col-md-3"><img src="img/clientes/cima.png" alt="" class="img-responsive"></div>
                     <div class="col-sm-3 col-md-3"><img src="img/clientes/trw.png" alt="" class="img-responsive"></div>
@@ -144,6 +147,52 @@
                 </div>
         </div>
         <!-- END/CLIENTS -->
+        <!-- BEGIN/TEAM -->
+        <div class="container">
+            <div class="row content">
+                <h1>Equipo</h1>
+                <h4>VTS Company</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo deleniti officia quibusdam iste numquam ipsa dolor architecto commodi sed nostrum. Vitae architecto ea autem labore suscipit provident quo officia libero.</p>
+            </div>
+        </div>
+        <!-- END/TEAM -->
+        <!-- BEGIN/MAP -->
+        <div class="container-fluid" id="googleMap"></div>
+        <!-- END/MAP -->
+        <!-- BEGIN/CONTACT -->
+        <div class="container">
+            <div class="row content">
+                <h1>Contáctanos</h1>
+                <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-contact" id="nombreContacto" maxlength="30" placeholder="Nombre">   
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-contact" id="telContacto" maxlength="10" placeholder="Teléfono">   
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control form-contact" id="emailContacto" placeholder="Email">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-contact" id="asuntoContacto" maxlength="30" placeholder="Asunto">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <textarea name="" id="comentariosContacto" cols="30" rows="10" class="form-control form-contact" placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="pull-left">
+                    <button type="submit" class="btn-light-blue">Enviar</button>
+                </div>
+                
+            </form>
+            </div>
+        </div>
+        <!-- END/CONTACT -->
     <footer>
    <div class="container  footer-black">
        <div class="row">
@@ -197,6 +246,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/googleMapInit.js"></script>
     <script type="text/javascript">
             $(document).ready(function(){
                 $("#myCarousel2").carousel();

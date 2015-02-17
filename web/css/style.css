@@ -1,7 +1,201 @@
+/*
+Theme Name: VTS
+Theme URI: http://vts.mx
+Author: Agencia Mixen
+Author URI: http://mixen.mx/
+Description: Tema para el sitio de VTS.
+Version: 1.0
+Text Domain: Mixen Communication & Web Technology
+*/
 
+/**  MENU  **/
 
-.center {
-    max-width: 1681px;
+.navbar {
+    max-height: 168px;
+    background: #ffffff;
+    border-bottom: 7px solid #f6f6f6;
+}
+
+.navbar-brand {
+    height: 124px;
+    padding: 0;
+}
+
+.navbar-nav {
+    padding: 10px 0;
+}
+
+.navbar-nav > li > a {
+    min-height: 96px;
+}
+
+.navbar-nav, .dropdown {
+    text-transform: uppercase;
+}
+.navbar-nav > li > a, .dropdown-menu > li > a {
+    color: #000060 !important;
+    font-weight: 700;
+    font-family: Helvetica;
+    line-height: 40px;
+}
+
+.navbar-nav > li > a {
+    padding: 30px 10px;
+    margin: 0 10px;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+    color: #fff !important;
+    background-color: #1c5584!important;
+    padding-bottom: 0;
+}
+
+.navbar-default .navbar-nav > .open > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+    background-image: none;
+}
+
+/**  SECTIONS  **/
+.content {
+    font-family: Helvetica;
+    color: #353535;
+}
+.content h1 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #212121;
+    text-align: center;
+    text-transform: uppercase;
+    width: 500px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(66, 66, 66, 0.2);
+    display: block;
+    margin: 50px auto 10px;
+}
+
+.content h5 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.content p {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/** FOOTER **/
+footer {
+    background: #3d3d3d;
+}
+
+.footer-black {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.container .footer-black {
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.footer-black h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+}
+
+.footer-rights {
+    background-color: #323232;
+    height: 39px;
+    margin: 10px 0px;
+}
+.footer-rights h4 {
+    font: 12px / 20px Helvetica;
+    color: #dfdfdf;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px 5px;
+}
+
+.footer-black p, .footer-black address  {
+    color: #ffffff;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.footer-black-2 {
+    background: #ff7a00;
+}
+
+.footer-black-2 p  {
+    padding-top: 8px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-black-2 a  {
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-black ul {
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-black ul li a::before {
+    content: '- ';
+}
+
+.footer-black ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-left: -30px;
+}
+
+.footer-black li a:hover {
+    color: #e3e3e3;
+    text-decoration: underline;
+}
+
+/**  MISC  **/
+.carousel, .carousel .item {
+    height: 950px;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+    width: 18px !important;
+    height: 18px !important;
+    border: 1px solid #6ab1e2 !important;
+}
+.carousel-indicators .active {
+    background-color: #6ab1e2 !important;
+}
+
+.img-center {
+    display: block;
     margin: 0 auto;
     
+}
+
+#googleMap {
+    width: 100%;
+    height: 526px;
+    overflow: hidden;
 }
