@@ -21,27 +21,11 @@ Text Domain: Mixen Communication & Web Technology
     padding: 0;
 }
 
-.navbar-nav {
-    padding: 10px 0;
-}
-
-.navbar-nav > li > a {
-    min-height: 96px;
-}
-
-.navbar-nav, .dropdown {
-    text-transform: uppercase;
-}
 .navbar-nav > li > a, .dropdown-menu > li > a {
     color: #000060 !important;
     font-weight: 700;
     font-family: Helvetica;
     line-height: 40px;
-}
-
-.navbar-nav > li > a {
-    padding: 30px 10px;
-    margin: 0 10px;
 }
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
@@ -71,7 +55,7 @@ Text Domain: Mixen Communication & Web Technology
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(66, 66, 66, 0.2);
     display: block;
-    margin: 50px auto 10px;
+    margin: 50px auto 20px;
 }
 
 .content h5 {
@@ -88,6 +72,10 @@ Text Domain: Mixen Communication & Web Technology
     line-height: 22px;
     font-weight: 300;
     text-align: justify;
+}
+
+.bg-white {
+    background-color: #fff;
 }
 
 .bg-blue {
@@ -109,7 +97,7 @@ Text Domain: Mixen Communication & Web Technology
     margin: 20px auto 10px;
 }
 
-.bg-blue p {
+.bg-blue p, .team p {
     width: 740px;
     line-height: 21px;
     font-size: 14px;
@@ -124,12 +112,20 @@ Text Domain: Mixen Communication & Web Technology
 
 .content h1.block {
     border-bottom: none;
+    margin-bottom: 0;
 }
 
 .clients {
-    
+    padding: 0;
 }
 
+.clients .container .row {
+    padding: 200px 0;
+}
+
+.team h1, .team p {
+    margin-bottom: 150px;
+}
 /** FOOTER **/
 footer {
     background: #3d3d3d;
@@ -214,6 +210,37 @@ footer {
     text-decoration: underline;
 }
 
+/** FORM **/
+
+.form-horizontal {
+    margin-top: 70px;
+    color: #949494;
+    font: 400 14px / 24px Helvetica;
+    padding-left: 15px;
+}
+
+.form-input {
+    width: 550px;
+    height: 59px;
+}
+
+.form-textarea {
+    width: 1136px;
+    height: 231px;
+    resize: none;
+}
+
+.btn-light-blue {
+    width: 211px;
+    height: 59px;
+    background-color: #389be0;
+    border: 1px solid #389be0;
+    border-radius: 10px; 
+    color: #ffffff;
+    font-size: 18px;
+    box-shadow: none;
+}
+
 /**  MISC  **/
 
 body {
@@ -278,3 +305,84 @@ body {
     height: 31px;
     margin: 0 auto;
 }
+
+.arrow {
+    position: relative;
+    height: 68px;
+}
+
+
+.arrowDown {
+    position: absolute;
+    left: 50%;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+/** MEDIA QUERIES **/
+
+@media (max-width: 767px) {
+
+.content h1 {
+    width: 100%
+}
+    
+.bg-blue p, .team p {
+    width: 100%;
+}
+    
+.form-input, .form-textarea {
+    width: 99%;
+    margin-bottom: 10px;
+}
+    
+}
+
+@media (min-width: 768px) {
+
+.navbar-nav > li > a, .dropdown-menu > li > a {
+    font-size: 10px;
+}
+
+.navbar-nav > li > a {
+    padding: 50px 10px;
+    margin: 0;
+}
+    
+.form-input, .form-textarea {
+    width: 100%;
+}
+    
+}
+
+@media (min-width: 992px) {
+
+.navbar-nav {
+    padding: 10px 0;
+}
+
+.navbar-nav > li > a {
+    min-height: 96px;
+}
+
+.navbar-nav, .dropdown {
+    text-transform: uppercase;
+}
+    
+.navbar-nav > li > a, .dropdown-menu > li > a {
+    font-size:  12px;
+}
+
+.navbar-nav > li > a {
+    padding: 30px 10px;
+    margin: 0 10px;
+}
+    
+}
+
