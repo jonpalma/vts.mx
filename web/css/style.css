@@ -25,14 +25,14 @@ Text Domain: Mixen Communication & Web Technology
     color: #000060 !important;
     font-weight: 700;
     font-family: Helvetica;
-    line-height: 40px;
+    line-height: 20px;
+    padding: 30px 10px;
 }
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
     color: #fff !important;
     background-color: #1c5584!important;
-    padding-bottom: 0;
 }
 
 .navbar-default .navbar-nav > .open > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
@@ -241,6 +241,11 @@ footer {
     box-shadow: none;
 }
 
+#form-messages {
+    margin-top: 10px;
+}
+
+
 /**  MISC  **/
 
 body {
@@ -248,7 +253,7 @@ body {
 }
 
 .carousel, .carousel .item {
-    height: 950px;
+    height: 500px;
 }
 
 .carousel-indicators li, .carousel-indicators li.active {
@@ -329,8 +334,16 @@ body {
 
 @media (max-width: 767px) {
 
+.navbar-brand {
+    height: 100px;
+}    
+    
+.navbar-brand img {
+    max-height: 80px;
+}
+    
 .content h1 {
-    width: 100%
+    width: 100%;
 }
     
 .bg-blue p, .team p {
@@ -341,17 +354,26 @@ body {
     width: 99%;
     margin-bottom: 10px;
 }
+
+.navbar-nav > li > a, .dropdown-menu > li > a {
+    line-height: 20px;
+    padding: 15px !important;
+}
     
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {    
 
+.nav .navbar-nav {
+    margin-top: 10px;
+}
+    
 .navbar-nav > li > a, .dropdown-menu > li > a {
     font-size: 10px;
+    line-height: 40px;
 }
 
 .navbar-nav > li > a {
-    padding: 50px 10px;
     margin: 0;
 }
     
@@ -377,12 +399,11 @@ body {
     
 .navbar-nav > li > a, .dropdown-menu > li > a {
     font-size:  12px;
+    line-height: 40px;
 }
 
 .navbar-nav > li > a {
-    padding: 30px 10px;
-    margin: 0 10px;
+    margin: 0 5px;
 }
     
 }
-

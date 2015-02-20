@@ -26,7 +26,7 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                     </button>
-                    <a href="index.php" class="navbar-brand">
+                    <a href="index.html" class="navbar-brand">
                         <img src="img/logo.jpg" alt="VTS logo" class="img-responsive logo-lg">
                     </a>
                 </div>
@@ -191,33 +191,35 @@
             <div class="container">
                 <div class="row content">
                     <h1>Contáctanos</h1>
-                    <form class="form-horizontal">
+                    <form id="ajax-contact" class="form-horizontal" method="post" action="mailer.php">
                     <div class="form-group">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control form-contact form-input" id="nombreContacto" maxlength="30" placeholder="Nombre">   
+                            <input type="text" class="form-control form-contact form-input" id="nombreContacto" name="nombreContacto" maxlength="30" placeholder="Nombre" required>   
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control form-contact form-input" id="telContacto" maxlength="10" placeholder="Teléfono">   
+                            <input type="text" class="form-control form-contact form-input" id="telContacto" name="telContacto" maxlength="10" placeholder="Teléfono">   
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-6">
-                            <input type="email" class="form-control form-contact form-input" id="emailContacto" placeholder="Email">
+                            <input type="email" class="form-control form-contact form-input" id="emailContacto" name="emailContacto" placeholder="Email" required>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control form-contact form-input" id="asuntoContacto" maxlength="30" placeholder="Asunto">
+                            <input type="text" class="form-control form-contact form-input" id="asuntoContacto" name="asuntoContacto" maxlength="30" placeholder="Asunto">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-12">
-                            <textarea name="" id="comentariosContacto" cols="30" rows="10" class="form-control form-contact form-textarea" placeholder="Mensaje"></textarea>
+                            <textarea id="comentariosContacto" name="comentariosContacto" cols="30" rows="10" class="form-control form-contact form-textarea" placeholder="Mensaje" required></textarea>
                         </div>
                     </div>
                     <div class="pull-left">
                         <button type="submit" class="btn-light-blue">Enviar</button>
                     </div>
-
                 </form>
+                <div class="col-sm-12">
+                    <div id="form-messages" role="alert"></div>
+                </div>
                 </div>
             </div>
         </div>
@@ -231,7 +233,6 @@
                <p>
                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cum velit consequatur hic doloribus numquam, dicta itaque explicabo fugit magni saepe quae eius deleniti ut, repellat fuga id, eos amet.
                </p>
-               <a href="#"><img src="img/tif.png" class="img-responsive" alt="TIF"></a>
            </div>
            <div class="col-sm-6 col-md-3">
                <h3>Servicios</h3>
@@ -264,7 +265,6 @@
                    Col.Valle Escondido<br />
                    31054 Chihuahua (Chihuahua)
                </address>
-               <a href="#"><img src="img/fb.jpg"  class="img-responsive" alt="CarneMart facebook"></a>
            </div>
            <div class="clearfix"></div>
        </div>
@@ -283,6 +283,7 @@
                 $("#myCarousel2").carousel();
             });
     </script>
+    <script src="js/app.js"></script>
 </footer>
 </body>
 </html>
