@@ -126,6 +126,24 @@ Text Domain: Mixen Communication & Web Technology
 .team h1, .team p {
     margin-bottom: 150px;
 }
+
+.team h5 {
+    font: 700 15px / 21px Helvetica;
+    color: #000;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.team .puesto {
+    font: 700 12px / 21px Helvetica;
+    font-style: italic;
+    color: #008cd1;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /** FOOTER **/
 footer {
     background: #3d3d3d;
@@ -330,6 +348,9 @@ body {
     padding-bottom: 0;
 }
 
+.margin-bottom {
+    margin-bottom: 30px;
+}
 /** MEDIA QUERIES **/
 
 @media (max-width: 767px) {
