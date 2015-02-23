@@ -24,7 +24,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "lazaro.reyes@mixen.com";
+        $recipient = "lazaro.reyes@mixen.mx";
 
         // Set the email subject.
         $subject = "Contactar a $name";
@@ -55,5 +55,3 @@
         http_response_code(403);
         echo "Hay un problema con su envío, por favor intentelo de nuevo.";
     }
-
-?>

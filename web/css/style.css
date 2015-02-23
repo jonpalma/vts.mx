@@ -248,7 +248,7 @@ footer {
     resize: none;
 }
 
-.btn-light-blue {
+.btn-light-blue, .btn-blue {
     width: 211px;
     height: 59px;
     background-color: #389be0;
@@ -257,6 +257,11 @@ footer {
     color: #ffffff;
     font-size: 18px;
     box-shadow: none;
+}
+
+.btn-blue {
+    background-color: #1C5483;
+    font: 400 18px / 22px Helvetica !important;
 }
 
 #form-messages {
@@ -392,6 +397,7 @@ body {
 .navbar-nav > li > a, .dropdown-menu > li > a {
     font-size: 10px;
     line-height: 40px;
+    padding: 30px 5px;
 }
 
 .navbar-nav > li > a {
