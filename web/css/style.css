@@ -29,8 +29,12 @@ Text Domain: Mixen Communication & Web Technology
     padding: 30px 10px;
 }
 
-.navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+    background-image: none !important;
+}
+
+.navbar-nav >li.active a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
+.dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
     color: #fff !important;
     background-color: #1c5584!important;
 }
@@ -40,6 +44,9 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 /**  SECTIONS  **/
+#servicios, #nosotros, #clientes, #equipo, #contacto {
+    padding-top: 40px;
+}
 .content {
     font-family: Helvetica;
     color: #353535;
@@ -67,11 +74,21 @@ Text Domain: Mixen Communication & Web Technology
     margin: 20px auto;
 }
 
-.content p {
+.content p, .content ul > li {
     font-size: 12px;
     line-height: 22px;
     font-weight: 300;
     text-align: justify;
+}
+
+.content ul > li::before {
+    content: '- ';
+}
+
+.content ul > li {
+    text-decoration: none;
+    list-style: none;
+    margin-left: -30px; 
 }
 
 .bg-white {
@@ -260,6 +277,8 @@ footer {
 }
 
 .btn-blue {
+    width: 156px;
+    height: 56px;
     background-color: #1C5483;
     font: 400 18px / 22px Helvetica !important;
 }
@@ -273,10 +292,33 @@ footer {
 
 body {
     overflow-x: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.carousel {
+
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+
+  min-width: 100%;
+  background-color: #fff;
+}
+.carousel-inner > .item > img {
+
+  min-width: 100%;
+  height: 100%;;
 }
 
 .carousel, .carousel .item {
-    height: 500px;
+    height: 950px;
 }
 
 .carousel-indicators li, .carousel-indicators li.active {
@@ -384,6 +426,10 @@ body {
 .navbar-nav > li > a, .dropdown-menu > li > a {
     line-height: 20px;
     padding: 15px !important;
+}
+    
+.md-content > div {
+    font-size: 10px;
 }
     
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="0">
   <header>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-right" id="bs-vts-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <li><a href="#">Inicio</a></li>
+                      <li><a href="#inicio">Inicio</a></li>
                       <li><a href="#servicios">Servicios</a></li>
                       <li><a href="#nosotros">Nosotros</a></li>
                       <li><a href="#productos">Productos</a></li>
@@ -46,6 +46,7 @@
         </nav> 
     </header>
     <div class="clearfix"></div>
+       <div id="inicio"></div>
         <div class="container-fluid">
             <div class="row">
                 <!-- SLIDE -->
@@ -77,98 +78,117 @@
             </div>
         </div>
         <!-- BEGIN SERVICES -->
-        <div id="servicios"></div><br><br>
-        <div class="jumbotron bg-white">
-            <div class="container">
-                <div class="row content">
-                  <div class="col-sm-12">
-                      <h1>Servicios</h1>
-                  </div>
+        <div id="servicios">
+           <br><br>
+            <div class="jumbotron bg-white">
+                    <div class="container">
+                        <div class="row content">
+                          <div class="col-sm-12">
+                              <h1>Servicios</h1>
+                          </div>
 
-                    <div class="col-sm-3 col-md 3">
-                        <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
-                        <h5>Análisis</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum laboriosam nostrum ut eos consectetur, sunt recusandae rerum sint libero necessitatibus qui, dolor eveniet. Quaerat obcaecati placeat impedit, reprehenderit error reiciendis?</p>
-                    </div>
-                    <div class="col-sm-3 col-md 3">
-                        <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
-                        <h5>Implementación</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque non, numquam distinctio! Culpa pariatur, placeat at corporis eligendi perferendis accusantium debitis recusandae vero ducimus reprehenderit laudantium, dolore aliquid cupiditate aliquam!</p>
-                    </div>
-                    <div class="col-sm-3 col-md 3">
-                        <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
-                        <h5>Troubleshooting</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet blanditiis explicabo iste ipsam, quos repellendus provident, numquam ab harum maiores magnam deleniti, delectus temporibus corporis. Culpa, nam assumenda provident iure!</p>
-                    </div>
-                    <div class="col-sm-3 col-md 3">
-                        <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
-                        <h5>Otros</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, officia aliquam commodi fugiat sequi cupiditate. Quod ratione repudiandae, atque excepturi, placeat cum eum impedit nulla natus qui rem odio. Eos.</p>
-                    </div>
+                            <div class="col-sm-3 col-md 3">
+                                <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
+                                <h5>Site survey Wifi</h5>
+                                <p>El site survey es el proceso de planear, diseñar u optimizar una red wireless, en particular el estándar 802.11 de red, para proveer de cobertura inalámbrica a una sección especificada donde se requiere la misma.</p>
+                            </div>
+                            <div class="col-sm-3 col-md 3">
+                                <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
+                                <h5>Diseño de data Center</h5>
+                                <p>En VTS te podemos ayudar a la Consolidación de cómputo, redes, servidores y almacenamiento, con puntos claves como Networking para Data Center, Almacenamiento unificado, Virtualización de servidores y escritorios, seguridad en la red y Optimización del Centro de Datos.</p>
+                            </div>
+                            <div class="col-sm-3 col-md 3">
+                                <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
+                                <h5>Soporte</h5>
+                                <p>Otorgamos soporte Certificado en las siguientes marcas:</p>
+                                <ul>
+                                    <li>Palo Alto Networks</li>
+                                    <li>Cisco</li>
+                                    <li>Emc</li>
+                                    <li>Vmware</li>
+                                    <li>Veeam</li>
+                                    <li>Huawei</li>
+                                    <li>Extricom</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-md 3">
+                                <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
+                                <h5>Analisis forense de trafico de red</h5>
+                                <p>Captura y análisis de paquetes para la reconstrucción de eventos que afecta a equipos terminales y de red, el objetivo es apoyar la recuperación y protección de tu infraestructura.</p>
+                            </div>
+                        </div>
                 </div>
+            </div> 
         </div>
-        </div> 
         <!-- END/SERVICES -->
         <!-- BEGIN/ABOUT US -->
-        <div id="nosotros"></div>
-        <svg id="whiteTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+        <div id="nosotros">
+            <svg id="whiteTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
 				<path d="M0 0 L0 40 L20 40 L50 100 L80 40 L100 40 L100 0 Z" />
-		</svg>
-        <div class="jumbotron bg-blue">
-           <div class="container">
-               <div class="row content">
-                    <h1>Nosotros</h1>
-                    <h5>VTS Company</h5>
-                    <p>Todas las soluciones que manejamos son lleve en mano, para su comodidad. <br /><br /> Como adicional, también realizamos servicio de análisis, Diseño, Consultoría, Implementación y Troubleshooting para tecnologías de Cisco Networking. Telefonía IP, Ruteo y Ambientes virtuales. En el caso de Troubleshooting, no incluye appliance de EMC, ya que ésto debe ser directamente con el fabricante.</p>
+		    </svg>
+            <div class="jumbotron bg-blue">
+               <div class="container">
+                   <div class="row content">
+                        <h1>Nosotros</h1>
+                        <h5>VTS Company</h5>
+                        <p>Todas las soluciones que manejamos son lleve en mano, para su comodidad. <br /><br /> Como adicional, también realizamos servicio de análisis, Diseño, Consultoría, Implementación y Troubleshooting para tecnologías de Cisco Networking. Telefonía IP, Ruteo y Ambientes virtuales. En el caso de Troubleshooting, no incluye appliance de EMC, ya que ésto debe ser directamente con el fabricante.</p>
+                   </div>
                </div>
-           </div>
+            </div>
         </div>
+        
         <!-- END/ABOUT US -->
         <!-- BEGIN/PRODUCTS -->
         <svg id="blueTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
 				<path d="M0 0 L0 40 L20 40 L50 100 L80 40 L100 40 L100 0 Z" />
         </svg>
-        <div id="productos"></div>
-        <div class="jumbotron bg-white">
-                <div class="container products">
-                    <div class="row content">
-                        <h1>Productos</h1>
-                        <div class="row">
-                            <div class="col-sm-4 col-md 4">
-                                <a href="#productos" class="md-trigger" data-modal="modal-1"><img src="img/productos/cisco.jpg" alt="" class="img-responsive img-center"></a>
+        <div id="productos">
+            <div class="jumbotron bg-white">
+                    <div class="container products">
+                        <div class="row content">
+                            <h1>Productos</h1>
+                            <div class="row">
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-1"><img src="img/productos/cisco.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-2"><img src="img/productos/emc2.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-3"><img src="img/productos/palo-alto-networks.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
                             </div>
-                            <div class="col-sm-4 col-md 4">
-                                <a href="#productos" class="md-trigger" data-modal="modal-2"><img src="img/productos/emc2.jpg" alt="" class="img-responsive img-center"></a>
+                            <div class="row">
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-4"><img src="img/productos/solarwinds.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-5"><img src="img/productos/veeam.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-6"><img src="img/productos/vmware.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
                             </div>
-                            <div class="col-sm-4 col-md 4">
-                                <a href="#productos" class="md-trigger" data-modal="modal-3"><img src="img/productos/palo-alto-networks.jpg" alt="" class="img-responsive img-center"></a>
-                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-7"><img src="img/productos/extricom.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-8"><img src="img/productos/huawei.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="#productos" class="md-trigger" data-modal="modal-9"><img src="img/productos/netapp.jpg" alt="" class="img-responsive img-center"></a>
+                                </div>
+                            </div> 
                         </div>
-                        <div class="row">
-                            <div class="col-sm-4 col-md 4">
-                                <a href="#productos" class="md-trigger" data-modal="modal-4"><img src="img/productos/solarwinds.jpg" alt="" class="img-responsive img-center"></a>
-                            </div>
-                            <div class="col-sm-4 col-md 4">
-                                <a href="#productos" class="md-trigger" data-modal="modal-5"><img src="img/productos/veeam.jpg" alt="" class="img-responsive img-center"></a>
-                            </div>
-                            <div class="col-sm-4 col-md 4">
-                                <a href="#productos" class="md-trigger" data-modal="modal-6"><img src="img/productos/vmware.jpg" alt="" class="img-responsive img-center"></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4 col-md 4">
-                                <a href="#productos" class="md-trigger" data-modal="modal-7"><img src="img/productos/extricom.jpg" alt="" class="img-responsive img-center"></a>
-                            </div>
-                            <div class="col-sm-4 col-md 4"></div>
-                            <div class="col-sm-4 col-md 4"></div>
-                        </div> 
-                    </div>
+                </div>
             </div>
         </div>
         <!-- END/PRODUCTS -->
         <!-- BEGIN/CLIENTS -->
-        <div id="clientes"></div><br><br>
-        <div class="jumbotron bg-white no-margin-bottom no-padding-bottom">
+        <div id="clientes">
+            <br><br>
+            <div class="jumbotron bg-white no-margin-bottom no-padding-bottom">
             <div class="container">
                 <div class="row clients content">
                     <h1 class="block">Clientes</h1>
@@ -176,187 +196,208 @@
                 </div>
             </div>
         </div>
-               <div class="jumbotron bg-blue clients">
-                  <div class="arrow">
-                      <img src="img/down-arrow.png" alt="" class="img-responsive img-center">
-                  </div>
-                   <div class="container">
-                       <div class="row">
-                       <div class="col-sm-3 col-md-3"><img src="img/clientes/cima.png" alt="" class="img-responsive img-center"></div>
-                       <div class="col-sm-3 col-md-3"><img src="img/clientes/trw.png" alt="" class="img-responsive img-center"></div>
-                       <div class="col-sm-3 col-md-3"><img src="img/clientes/uach.png" alt="" class="img-responsive img-center"></div>
-                       <div class="col-sm-3 col-md-3"><img src="img/clientes/mixen.png" alt="" class="img-responsive img-center"></div>
-                       </div>
-                   </div>
-                
+            <div class="jumbotron bg-blue clients">
+                      <div class="arrow">
+                          <img src="img/down-arrow.png" alt="" class="img-responsive img-center">
+                      </div>
+                       <div class="container">
+                           <div class="row">
+                           <div class="col-sm-3 col-md-3"><img src="img/clientes/cima.png" alt="" class="img-responsive img-center"></div>
+                           <div class="col-sm-3 col-md-3"><img src="img/clientes/trw.png" alt="" class="img-responsive img-center"></div>
+                           <div class="col-sm-3 col-md-3"><img src="img/clientes/uach.png" alt="" class="img-responsive img-center"></div>
+                           <div class="col-sm-3 col-md-3"><img src="img/clientes/mixen.png" alt="" class="img-responsive img-center"></div>
+                           </div>
+                       </div>      
+            </div>
         </div>
         <!-- END/CLIENTS -->
         <!-- BEGIN/TEAM -->
-        <div id="equipo"></div><br><br>
-        <div class="jumbotron bg-white">
-            <div class="container team">
-                <div class="row content">
-                    <h1>Equipo</h1>
-                    <div class="container">
-                        <div class="row margin-bottom">
-                            <div class="col-sm-3">
-                                <img src="img/persona1.jpg"  class="img-responsive img-circle img-center" alt="">
-                                <h5>Ing. Luis Chavira</h5>
-                                <span class="puesto">Director</span>
+        <div id="equipo">
+            <br><br>
+            <div class="jumbotron bg-white">
+                <div class="container team">
+                    <div class="row content">
+                        <h1>Equipo</h1>
+                        <div class="container">
+                            <div class="row margin-bottom">
+                                <div class="col-sm-3">
+                                    <img src="img/persona1.jpg"  class="img-responsive img-circle img-center" alt="">
+                                    <h5>Ing. Luis Chavira</h5>
+                                    <span class="puesto">Director</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
+                                    <h5>Lic. Gaby Termenius</h5>
+                                    <span class="puesto">Asesora Comercial</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/persona1.jpg" alt="" class="img-responsive img-circle img-center">
+                                    <h5>Ing. Erick Luxor</h5>
+                                    <span class="puesto">Asesor Comercial</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/persona1.jpg" alt="" class="img-responsive img-circle img-center">
+                                    <h5>Ing. Manolo Wingdus</h5>
+                                    <span class="puesto">Admin. Redes</span>
+                                </div>
                             </div>
-                            <div class="col-sm-3">
-                                <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
-                                <h5>Lic. Gaby Termenius</h5>
-                                <span class="puesto">Asesora Comercial</span>
+                            <div class="row margin-bottom">
+                                <div class="col-sm-3">
+                                    <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
+                                    <h5>Sandra Largeth</h5>
+                                    <span class="puesto">Crédito</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
+                                    <h5>Samantha Samus</h5>
+                                    <span class="puesto">Soporte</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
+                                    <h5>Carla Munder</h5>
+                                    <span class="puesto">Administrativa</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
+                                    <h5>Olivia Erdinger</h5>
+                                    <span class="puesto">Asistente</span>
+                                </div>
                             </div>
-                            <div class="col-sm-3">
-                                <img src="img/persona1.jpg" alt="" class="img-responsive img-circle img-center">
-                                <h5>Ing. Erick Luxor</h5>
-                                <span class="puesto">Asesor Comercial</span>
-                            </div>
-                            <div class="col-sm-3">
-                                <img src="img/persona1.jpg" alt="" class="img-responsive img-circle img-center">
-                                <h5>Ing. Manolo Wingdus</h5>
-                                <span class="puesto">Admin. Redes</span>
-                            </div>
+
                         </div>
-                        <div class="row margin-bottom">
-                            <div class="col-sm-3">
-                                <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
-                                <h5>Sandra Largeth</h5>
-                                <span class="puesto">Crédito</span>
-                            </div>
-                            <div class="col-sm-3">
-                                <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
-                                <h5>Samantha Samus</h5>
-                                <span class="puesto">Soporte</span>
-                            </div>
-                            <div class="col-sm-3">
-                                <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
-                                <h5>Carla Munder</h5>
-                                <span class="puesto">Administrativa</span>
-                            </div>
-                            <div class="col-sm-3">
-                                <img src="img/persona2.jpg" alt="" class="img-responsive img-circle img-center">
-                                <h5>Olivia Erdinger</h5>
-                                <span class="puesto">Asistente</span>
-                            </div>
-                        </div>
-                        
                     </div>
+                </div>
             </div>
         </div>
-        </div>
-        
         <!-- END/TEAM -->
-        <!-- BEGIN/MAP -->
-        <div id="contacto">
-            <div class="container-fluid" id="googleMap"></div>
-        </div>
-        <!-- END/MAP -->
         <!-- BEGIN/CONTACT -->
-        <div class="jumbotron bg-white">
-            <div class="container">
-                <div class="row content">
-                    <h1>Contáctanos</h1>
-                    <form id="ajax-contact" class="form-horizontal" method="post" action="mailer.php">
-                    <div class="form-group">
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control form-contact form-input" id="nombreContacto" name="nombreContacto" maxlength="30" placeholder="Nombre" required>   
+        <div id="contacto">
+            <br><br>
+            <!-- BEGIN/MAP -->
+            <div class="container-fluid" id="googleMap"></div>
+        <!-- END/MAP -->
+            <div class="jumbotron bg-white">
+                <div class="container">
+                    <div class="row content">
+                        <h1>Contáctanos</h1>
+                        <form id="ajax-contact" class="form-horizontal" method="post" action="mailer.php">
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-contact form-input" id="nombreContacto" name="nombreContacto" maxlength="30" placeholder="Nombre" required>   
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-contact form-input" id="telContacto" name="telContacto" maxlength="10" placeholder="Teléfono">   
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control form-contact form-input" id="telContacto" name="telContacto" maxlength="10" placeholder="Teléfono">   
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control form-contact form-input" id="emailContacto" name="emailContacto" placeholder="Email" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-contact form-input" id="asuntoContacto" name="asuntoContacto" maxlength="30" placeholder="Asunto">
+                            </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <textarea id="comentariosContacto" name="comentariosContacto" cols="30" rows="10" class="form-control form-contact form-textarea" placeholder="Mensaje" required></textarea>
+                            </div>
+                        </div>
+                        <div class="pull-left">
+                            <button type="submit" class="btn-light-blue">Enviar</button>
+                        </div>
+                    </form>
+                    <div class="col-sm-12">
+                        <div id="form-messages" role="alert"></div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-sm-6">
-                            <input type="email" class="form-control form-contact form-input" id="emailContacto" name="emailContacto" placeholder="Email" required>
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control form-contact form-input" id="asuntoContacto" name="asuntoContacto" maxlength="30" placeholder="Asunto">
-                        </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                            <textarea id="comentariosContacto" name="comentariosContacto" cols="30" rows="10" class="form-control form-contact form-textarea" placeholder="Mensaje" required></textarea>
-                        </div>
-                    </div>
-                    <div class="pull-left">
-                        <button type="submit" class="btn-light-blue">Enviar</button>
-                    </div>
-                </form>
-                <div class="col-sm-12">
-                    <div id="form-messages" role="alert"></div>
-                </div>
                 </div>
             </div>
         </div>
-        
         <!-- END/CONTACT -->
         <!-- BEGIN/MODAL SECTION -->
         <div class="md-modal md-effect-12" id="modal-1">
 			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <h3>Modal Dialog</h3>
-			        <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                            <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                            <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                            <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-					<button class="md-close btn-blue">Cerrar</button>
-			    </div>
-            </div>
-			    
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="img/productos/cisco.jpg" alt="cisco" class="img-responsive img-center">
+                            <p>Manejamos los siguientes productos:</p>
+                            <ul>
+                                    <li>Dispositivos de conexión para redes informáticas: routers, switches, tecnologia inalámbrica.</li>
+                                    <li>Dispositivos de seguridad como Cortafuegos y Concentradores para VPN. </li>
+                                    <li>Productos de Telefonía IP como teléfonos y el CallManager.</li>
+                                    <li>Equipos para Redes de Área de Almacenamiento y Servidores.</li>
+                            </ul>
+                            <p>Actualmente, Cisco Systems, es Líder Mundial en soluciones de red e infraestructuras para Internet.</p>
+                            <div class="col-xs-12">
+                                <div class="col-xs-3">
+                                    <img src="img/productos/cisco/telefonia_ip.jpg" alt="cisco telefono ip" class="img-responsive img-center">
+                                </div>
+                                <div class="col-xs-3">
+                                    <img src="img/productos/cisco/routerCISCO2901.jpg" alt="cisco router CISCO2901" class="img-responsive img-center">
+                                </div>
+                                <div class="col-xs-3">
+                                    <img src="img/productos/cisco/Servidorucs.jpg" alt="cisco servidor ucs" class="img-responsive img-center">
+                                </div>
+                                <div class="col-xs-3">
+                                    <img src="img/productos/cisco/switchWS-C3750X-48T-L.jpg" alt="cisco switch" class="img-responsive img-center">
+                                </div>
+                            </div>
+                            <button class="md-close btn-blue">Regresar</button>
+                        </div>
+                    </div>
+                </div> 
 		    </div>
 		</div>
         <div class="md-modal md-effect-12" id="modal-2">
 			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <h3>Modal Dialog</h3>
-			        <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                            <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                            <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                            <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-					<button class="md-close btn-blue">Cerrar</button>
-			    </div>
-            </div>
-			    
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-xs-12">
+                            <img src="img/productos/emc2.jpg" alt="emc" class="img-responsive img-center">
+                            <p>Ésta tecnología cuenta con el mas alto rango de calidad y redundancia en el mercado al mejor precio; provee estabilidad, seguridad y eficienta en gran manera procesos como, compartición de archivos, respaldo de información, planes anti desastre y recuperación de datos. 
+        EMC acelera el viaje al cómputo en la nube, ya que ayuda a los departamentos de TI a almacenar, administrar, proteger y analizar su activo más valioso, la información, de una manera más ágil, confiable y rentable.</p>
+                        </div>
+                        <div class="col-xs-12">
+                           <img src="img/productos/emc/vnx.jpg" alt="emc vnx" class="img-responsive img-center">
+                        </div>
+                        <button class="md-close btn-blue">Regresar</button>
+                    </div>
+                </div> 
 		    </div>
 		</div>
         <div class="md-modal md-effect-12" id="modal-3">
 			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <h3>Modal Dialog</h3>
-			        <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                            <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                            <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                            <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-					<button class="md-close btn-blue">Cerrar</button>
-			    </div>
-            </div>
-			    
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="img/productos/palo-alto-networks.jpg" alt="palo alto networks" class="img-responsive img-center">
+                            <p>Es un Firewall de siguiente generación basado en aplicaciones, usuarios y contenido que provee visibilidad granular del tráfico en la red e incluye generación de reportes.
+Palo Alto está diseñado ya sea para Data Center, oficinas remotas (incluye BYOD), procesos de seguridad altamente regulados o administración de riesgos; en todos los casos, provee seguridad, completa visibilidad y control de tu red.</p>
+                        <div class="col-xs-12">
+                            <img src="img/productos/palo-alto-networks/Product-Family.jpg" alt="palo alto networks" class="img-responsive img-center">
+                        </div>
+                            <button class="md-close btn-blue">Regresar</button>
+                        </div>
+                    </div>
+                </div>  
 		    </div>
 		</div>
         <div class="md-modal md-effect-12" id="modal-4">
 			<div class="md-content">
             <div class="container-fluid">
                 <div class="row">
-			        <h3>Modal Dialog</h3>
-			        <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                            <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                            <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                            <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-					<button class="md-close btn-blue">Cerrar</button>
+			        <div class="row">
+                        <div class="col-xs-12">
+                            <img src="img/productos/solarwinds.jpg" alt="solarwinds" class="img-responsive img-center">
+                            <p>Permite monitoreo de red, optimización de aplicaciones, mejora el rendimiento de las Bases de Datos y promueve el cumplimiento de los estándares de seguridad dentro de su empresa. Esto mediante una interfaz sencilla de usar e intuitiva.
+Provee ahorro de tiempo, visibilidad, reportes y eficacia en detección, diagnóstico y solución de problemas de rendimiento de redes, facilitando así, la administración de su entorno de TI.</p>
+                        <div class="col-xs-12">
+                            <img src="img/productos/solarwinds/ac-meatgrinder-large.jpg" alt="solarwinds" class="img-responsive img-center">
+                        </div>
+                            <button class="md-close btn-blue">Regresar</button>
+                        </div>
+                    </div>
 			    </div>
             </div>
 			    
@@ -364,33 +405,42 @@
 		</div>
         <div class="md-modal md-effect-12" id="modal-5">
 			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <h3>Modal Dialog</h3>
-			        <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                            <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                            <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                            <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-					<button class="md-close btn-blue">Cerrar</button>
-			    </div>
-            </div>
-			    
+                <div class="container-fluid">
+                    <div class="row">
+                            <div class="col-xs-12">
+                                <img src="img/productos/veeam.jpg" alt="veeam" class="img-responsive img-center">
+                                <p>Software para respaldos y replicación de ambiente virtual (Aplicaciones, Datos, VM), con un alto índice de compatibilidad dentro de tu Data Center. Es de manejo rápido, simple e intuitivo.
+        VEEAM provee un desempeño y administración únicos con sus tecnologías de alta disponibilidad en protección de datos.</p>
+                            <div class="col-xs-12">
+                                <img src="img/productos/veeam/BRnew.jpg" alt="veeam backup and replace" class="img-responsive img-center">
+                            </div>
+                                <button class="md-close btn-blue">Cerrar</button>
+                            </div>
+                        </div>
+                </div> 
 		    </div>
 		</div>
         <div class="md-modal md-effect-12" id="modal-6">
 			<div class="md-content">
             <div class="container-fluid">
                 <div class="row">
-			        <h3>Modal Dialog</h3>
-			        <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                            <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                            <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                            <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-					<button class="md-close btn-blue">Cerrar</button>
+			        <div class="col-xs-12">
+                            <img src="img/productos/vmware.jpg" alt="vmware" class="img-responsive img-center">
+                            <p>Es la plataforma Líder en virtualización y administración de la nube, promueve el incremento en la productividad de una empresa, reduce considerablemente costos operacionales e incrementa la eficiencia de energía y recursos utilizados en el Data Center. 
+Permite continuidad de negocio, recuperación de desastres en menor tiempo, y asegura el cumplimiento con políticas de desempeño dentro del Data Center con su infraestructura zero-touch.</p>
+                            <div class="col-xs-12">
+                                <div class="col-xs-4">
+                                    <img src="img/productos/vmware/schema_vmware_site_recovery_manager.jpg" alt="vmware" class="img-responsive img-center">
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="img/productos/vmware/vmw-dgrm-vcenter-server2-lg.jpg" alt="vmware" class="img-responsive img-center">
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="img/productos/vmware/vmware_vcenter_site_recovery_manager_diagram.jpg" alt="vmware" class="img-responsive img-center">
+                                </div>
+                            </div>
+                            <button class="md-close btn-blue">Regresar</button>
+                    </div>
 			    </div>
             </div>
 			    
@@ -400,14 +450,52 @@
 			<div class="md-content">
             <div class="container-fluid">
                 <div class="row">
-			        <h3>Modal Dialog</h3>
-			        <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                            <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                            <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                            <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-					<button class="md-close btn-blue">Cerrar</button>
+			        <div class="col-xs-12">
+                                <img src="img/productos/extricom.jpg" alt="extricom" class="img-responsive img-center">
+                                <p>Es una tecnología de última generación con arquitectura tipo sábana, única en su ramo, que permite un mejor manejo y desempeño de la red inalámbrica.
+Con Extricom, la calidad de señal, servicio y mejora en densidad de usuarios, no se verá limitada.</p>
+                            <div class="col-xs-12">
+                                <img src="img/productos/extricom/extricom-ms-1000ap30n.jpg" alt="extricom" class="img-responsive img-center">
+                            </div>
+                                <button class="md-close btn-blue">Cerrar</button>
+                    </div>
+			    </div>
+            </div>
+			    
+		    </div>
+		</div>
+        <div class="md-modal md-effect-12" id="modal-8">
+			<div class="md-content">
+            <div class="container-fluid">
+                <div class="row">
+			        <div class="col-xs-12">
+                                <img src="img/productos/huawei.jpg" alt="huawei" class="img-responsive img-center">
+                                <p>Manejamos los siguientes productos:</p>
+                            <ul>
+                                    <li>Dispositivos de conexión para redes informáticas: routers, switches.</li>
+                            </ul>
+                            <div class="col-xs-12">
+                                <img src="img/productos/huawei/router.jpg" alt="huawei" class="img-responsive img-center">
+                            </div>
+                                <button class="md-close btn-blue">Cerrar</button>
+                    </div>
+			    </div>
+            </div>
+			    
+		    </div>
+		</div>
+        <div class="md-modal md-effect-12" id="modal-9">
+			<div class="md-content">
+            <div class="container-fluid">
+                <div class="row">
+			        <div class="col-xs-12">
+                                <img src="img/productos/netapp.jpg" alt="netapp" class="img-responsive img-center">
+                                <p>NetApp ofrece soluciones integradas de almacenamiento de datos que le permiten aprovechar la virtualización, la computación en nube y la eficacia de almacenamiento a fin de aumentar la rentabilidad, la agilidad y el rendimiento de su empresa.</p>
+                            <div class="col-xs-12">
+                                <img src="img/productos/netapp/router.jpg" alt="netapp" class="img-responsive img-center">
+                            </div>
+                                <button class="md-close btn-blue">Cerrar</button>
+                    </div>
 			    </div>
             </div>
 			    
@@ -465,15 +553,17 @@
    <br />
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/googleMapInit.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/modalEffects.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript">
             $(document).ready(function(){
                 $("#myCarousel2").carousel();
+                $('body').scrollspy();
+                $('nav.nav-navbar a').smoothScroll();
             });
     </script>
     <script>
