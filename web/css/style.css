@@ -180,10 +180,12 @@ footer {
 
 .footer-black h3 {
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
-    border-bottom: 1px solid #fff;
+    text-align: center;
+    display: block;
     padding-bottom: 8px;
+    margin: 0 auto;
 }
 
 .footer-rights {
@@ -203,8 +205,11 @@ footer {
 
 .footer-black p, .footer-black address  {
     color: #ffffff;
-    text-align: justify;
-    font-size: 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+    margin: 20px auto;
 }
 
 .footer-black-2 {
@@ -297,7 +302,6 @@ body {
 }
 
 .carousel {
-
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -395,6 +399,9 @@ body {
     padding-bottom: 0;
 }
 
+.margin-top{
+    margin-top: 30px;
+}
 .margin-bottom {
     margin-bottom: 30px;
 }
