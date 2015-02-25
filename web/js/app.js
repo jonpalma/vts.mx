@@ -10,6 +10,7 @@ $(function() {
 	$(form).submit(function(e) {
 		// Stop the browser from submitting the form.
 		e.preventDefault();
+        $("#sendBttn").text("Enviando...");
 
 		// Serialize the form data.
 		var formData = $(form).serialize();
@@ -34,6 +35,7 @@ $(function() {
 			$('#emailContacto').val('');
 			$('#asuntoContacto').val('');
 			$('#comentariosContacto').val('');
+            $("#sendBttn").text("Enviar");
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
@@ -43,8 +45,10 @@ $(function() {
 			// Set the message text.
 			if (data.responseText !== '') {
 				$(formMessages).text(data.responseText);
+                $("#sendBttn").text("Enviar");
 			} else {
 				$(formMessages).text('Oops! Ocurrió un error no se pudo enviar la forma.');
+                $("#sendBttn").text("Enviar");
 			}
 		});
 
