@@ -123,7 +123,7 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .products {
-    padding-top: 200px;
+    padding-top: 100px;
     margin-bottom: 80px;
 }
 
@@ -141,11 +141,11 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .team h1, .team p {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 .team h5 {
-    font: 700 15px / 21px Helvetica;
+    font: 400 15px / 21px Helvetica;
     color: #000;
     display: block;
     margin: 5px auto;
@@ -153,7 +153,7 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .team .puesto {
-    font: 700 12px / 21px Helvetica;
+    font: 400 12px / 21px Helvetica;
     font-style: italic;
     color: #008cd1;
     display: block;
@@ -168,7 +168,7 @@ footer {
 
 .footer-black {
     margin-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-top: 20px;
     line-height: 20px;
 }
@@ -181,7 +181,7 @@ footer {
 .footer-black h3 {
     color: #fff;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     display: block;
     padding-bottom: 8px;
@@ -196,18 +196,22 @@ footer {
 .footer-rights h4 {
     font: 12px / 20px Helvetica;
     color: #dfdfdf;
-    font-weight: 700;
+    font-weight: 400;
     font-style: italic;
     text-align: center;
     margin: 0px;
     padding: 10px 0px 5px;
 }
 
+.footer-rights a { 
+    color: #fff;
+}
+
 .footer-black p, .footer-black address  {
     color: #ffffff;
     text-align: center;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 400;
     display: block;
     margin: 20px auto;
 }
