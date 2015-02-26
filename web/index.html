@@ -49,6 +49,20 @@
             </div>
         </nav> 
     </header>
+    <!-- BEGIN/MODAL SECTION -->
+        <div class="container overlay overlay-slidedown">
+            <div class="row">
+                <div class="overlay-section"></div>
+                <div class="col-md-12 ">
+                    <!--<a class="overlay-close">
+                        <br><br>
+                        <img class="img-responsive center-block" src="img/xsep.png" alt="close image"  data-toggle="tooltip" title="Close">
+                    </a>-->
+                    <button class="overlay-close btn-blue center-block">Regresar</button>
+                </div>
+            </div>
+        </div><!-- the overlay element -->
+    <!-- END/MODAL SECTION -->
     <div class="clearfix"></div>
        <div id="inicio"></div>
         <div class="container-fluid">
@@ -94,7 +108,7 @@
                             </div>
                             <div class="col-sm-3 col-md 3">
                                 <img src="img/cubo.jpg" alt="VTS Cube" class="img-responsive img-center">
-                                <h5>Diseño de data Center</h5>
+                                <h5>Diseño de Data Center</h5>
                                 <p>En VTS te podemos ayudar a la Consolidación de cómputo, redes, servidores y almacenamiento, con puntos claves como Networking para Data Center, Almacenamiento unificado, Virtualización de servidores y escritorios, seguridad en la red y Optimización del Centro de Datos.</p>
                             </div>
                             <div class="col-sm-3 col-md 3">
@@ -141,7 +155,7 @@
                             <h1>Productos</h1>
                             <div class="row">
                                 <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-1"><img src="img/productos/cisco.jpg" alt="" class="img-responsive img-center"></a>
+                                    <a href="cisco.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/cisco.jpg" alt="" class="img-responsive img-center"></a>
                                 </div>
                                 <div class="col-sm-4 col-md 4">
                                     <a href="#productos" class="md-trigger" data-modal="modal-2"><img src="img/productos/emc2.jpg" alt="" class="img-responsive img-center"></a>
@@ -225,7 +239,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <img src="img/equipo/erick-aguirre.jpg" alt="Erick Aguirre" class="img-responsive img-circle img-center">
-                                    <h5>Erick Aguirre</h5>
+                                    <h5>Eric Aguirre</h5>
                                     <span class="puesto">Asesor Comercial</span>
                                 </div>
                                </div>
@@ -294,195 +308,6 @@
             </div>
         </div>
         <!-- END/CONTACT -->
-        <!-- BEGIN/MODAL SECTION -->
-        <div class="md-modal md-effect-12" id="modal-1">
-			<div class="md-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <img src="img/productos/cisco.jpg" alt="cisco" class="img-responsive img-center">
-                            <p>Manejamos los siguientes productos:</p>
-                            <ul>
-                                    <li>Dispositivos de conexión para redes informáticas: routers, switches, tecnologia inalámbrica.</li>
-                                    <li>Dispositivos de seguridad como Cortafuegos y Concentradores para VPN. </li>
-                                    <li>Productos de Telefonía IP como teléfonos y el CallManager.</li>
-                                    <li>Equipos para Redes de Área de Almacenamiento y Servidores.</li>
-                            </ul>
-                            <p>Actualmente, Cisco Systems, es Líder Mundial en soluciones de red e infraestructuras para Internet.</p>
-                            <div class="col-xs-12">
-                                <div class="col-xs-3">
-                                    <img src="img/productos/cisco/telefonia_ip.jpg" alt="cisco telefono ip" class="img-responsive img-center">
-                                </div>
-                                <div class="col-xs-3">
-                                    <img src="img/productos/cisco/routerCISCO2901.jpg" alt="cisco router CISCO2901" class="img-responsive img-center">
-                                </div>
-                                <div class="col-xs-3">
-                                    <img src="img/productos/cisco/Servidorucs.jpg" alt="cisco servidor ucs" class="img-responsive img-center">
-                                </div>
-                                <div class="col-xs-3">
-                                    <img src="img/productos/cisco/switchWS-C3750X-48T-L.jpg" alt="cisco switch" class="img-responsive img-center">
-                                </div>
-                            </div>
-                            <button class="md-close btn-blue">Regresar</button>
-                        </div>
-                    </div>
-                </div> 
-		    </div>
-		</div>
-        <div class="md-modal md-effect-12" id="modal-2">
-			<div class="md-content">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-xs-12">
-                            <img src="img/productos/emc2.jpg" alt="emc" class="img-responsive img-center">
-                            <p>Ésta tecnología cuenta con el mas alto rango de calidad y redundancia en el mercado al mejor precio; provee estabilidad, seguridad y eficienta en gran manera procesos como, compartición de archivos, respaldo de información, planes anti desastre y recuperación de datos. 
-        EMC acelera el viaje al cómputo en la nube, ya que ayuda a los departamentos de TI a almacenar, administrar, proteger y analizar su activo más valioso, la información, de una manera más ágil, confiable y rentable.</p>
-                        </div>
-                        <div class="col-xs-12">
-                           <img src="img/productos/emc/vnx.jpg" alt="emc vnx" class="img-responsive img-center">
-                        </div>
-                        <button class="md-close btn-blue">Regresar</button>
-                    </div>
-                </div> 
-		    </div>
-		</div>
-        <div class="md-modal md-effect-12" id="modal-3">
-			<div class="md-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <img src="img/productos/palo-alto-networks.jpg" alt="palo alto networks" class="img-responsive img-center">
-                            <p>Es un Firewall de siguiente generación basado en aplicaciones, usuarios y contenido que provee visibilidad granular del tráfico en la red e incluye generación de reportes.
-Palo Alto está diseñado ya sea para Data Center, oficinas remotas (incluye BYOD), procesos de seguridad altamente regulados o administración de riesgos; en todos los casos, provee seguridad, completa visibilidad y control de tu red.</p>
-                        <div class="col-xs-12">
-                            <img src="img/productos/palo-alto-networks/Product-Family.jpg" alt="palo alto networks" class="img-responsive img-center">
-                        </div>
-                            <button class="md-close btn-blue">Regresar</button>
-                        </div>
-                    </div>
-                </div>  
-		    </div>
-		</div>
-        <div class="md-modal md-effect-12" id="modal-4">
-			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <div class="row">
-                        <div class="col-xs-12">
-                            <img src="img/productos/solarwinds.jpg" alt="solarwinds" class="img-responsive img-center">
-                            <p>Permite monitoreo de red, optimización de aplicaciones, mejora el rendimiento de las Bases de Datos y promueve el cumplimiento de los estándares de seguridad dentro de su empresa. Esto mediante una interfaz sencilla de usar e intuitiva.
-Provee ahorro de tiempo, visibilidad, reportes y eficacia en detección, diagnóstico y solución de problemas de rendimiento de redes, facilitando así, la administración de su entorno de TI.</p>
-                        <div class="col-xs-12">
-                            <img src="img/productos/solarwinds/ac-meatgrinder-large.jpg" alt="solarwinds" class="img-responsive img-center">
-                        </div>
-                            <button class="md-close btn-blue">Regresar</button>
-                        </div>
-                    </div>
-			    </div>
-            </div>
-			    
-		    </div>
-		</div>
-        <div class="md-modal md-effect-12" id="modal-5">
-			<div class="md-content">
-                <div class="container-fluid">
-                    <div class="row">
-                            <div class="col-xs-12">
-                                <img src="img/productos/veeam.jpg" alt="veeam" class="img-responsive img-center">
-                                <p>Software para respaldos y replicación de ambiente virtual (Aplicaciones, Datos, VM), con un alto índice de compatibilidad dentro de tu Data Center. Es de manejo rápido, simple e intuitivo.
-        VEEAM provee un desempeño y administración únicos con sus tecnologías de alta disponibilidad en protección de datos.</p>
-                            <div class="col-xs-12">
-                                <img src="img/productos/veeam/BRnew.jpg" alt="veeam backup and replace" class="img-responsive img-center">
-                            </div>
-                                <button class="md-close btn-blue">Regresar</button>
-                            </div>
-                        </div>
-                </div> 
-		    </div>
-		</div>
-        <div class="md-modal md-effect-12" id="modal-6">
-			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <div class="col-xs-12">
-                            <img src="img/productos/vmware.jpg" alt="vmware" class="img-responsive img-center">
-                            <p>Es la plataforma Líder en virtualización y administración de la nube, promueve el incremento en la productividad de una empresa, reduce considerablemente costos operacionales e incrementa la eficiencia de energía y recursos utilizados en el Data Center. 
-Permite continuidad de negocio, recuperación de desastres en menor tiempo, y asegura el cumplimiento con políticas de desempeño dentro del Data Center con su infraestructura zero-touch.</p>
-                            <div class="col-xs-12">
-                                <div class="col-xs-4">
-                                    <img src="img/productos/vmware/schema_vmware_site_recovery_manager.jpg" alt="vmware" class="img-responsive img-center">
-                                </div>
-                                <div class="col-xs-4">
-                                    <img src="img/productos/vmware/vmw-dgrm-vcenter-server2-lg.jpg" alt="vmware" class="img-responsive img-center">
-                                </div>
-                                <div class="col-xs-4">
-                                    <img src="img/productos/vmware/vmware_vcenter_site_recovery_manager_diagram.jpg" alt="vmware" class="img-responsive img-center">
-                                </div>
-                            </div>
-                            <button class="md-close btn-blue">Regresar</button>
-                    </div>
-			    </div>
-            </div>
-			    
-		    </div>
-		</div>
-        <div class="md-modal md-effect-12" id="modal-7">
-			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <div class="col-xs-12">
-                                <img src="img/productos/extricom.jpg" alt="extricom" class="img-responsive img-center">
-                                <p>Es una tecnología de última generación con arquitectura tipo sábana, única en su ramo, que permite un mejor manejo y desempeño de la red inalámbrica.
-Con Extricom, la calidad de señal, servicio y mejora en densidad de usuarios, no se verá limitada.</p>
-                            <div class="col-xs-12">
-                                <img src="img/productos/extricom/extricom-ms-1000ap30n.jpg" alt="extricom" class="img-responsive img-center">
-                            </div>
-                                <button class="md-close btn-blue">Regresar</button>
-                    </div>
-			    </div>
-            </div>
-			    
-		    </div>
-		</div>
-        <div class="md-modal md-effect-12" id="modal-8">
-			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <div class="col-xs-12">
-                                <img src="img/productos/huawei.jpg" alt="huawei" class="img-responsive img-center">
-                                <p>Manejamos los siguientes productos:</p>
-                            <ul>
-                                    <li>Dispositivos de conexión para redes informáticas: routers, switches.</li>
-                            </ul>
-                            <div class="col-xs-12">
-                                <img src="img/productos/huawei/router.jpg" alt="huawei" class="img-responsive img-center">
-                            </div>
-                                <button class="md-close btn-blue">Regresar</button>
-                    </div>
-			    </div>
-            </div>
-			    
-		    </div>
-		</div>
-        <div class="md-modal md-effect-12" id="modal-9">
-			<div class="md-content">
-            <div class="container-fluid">
-                <div class="row">
-			        <div class="col-xs-12">
-                                <img src="img/productos/netapp.jpg" alt="netapp" class="img-responsive img-center">
-                                <p>NetApp ofrece soluciones integradas de almacenamiento de datos que le permiten aprovechar la virtualización, la computación en nube y la eficacia de almacenamiento a fin de aumentar la rentabilidad, la agilidad y el rendimiento de su empresa.</p>
-                            <div class="col-xs-12">
-                                <img src="img/productos/netapp/router.jpg" alt="netapp" class="img-responsive img-center">
-                            </div>
-                                <button class="md-close btn-blue">Regresar</button>
-                    </div>
-			    </div>
-            </div>
-			    
-		    </div>
-		</div>
-        <div class="md-overlay"></div><!-- the overlay element -->
-        <!-- END/MODAL SECTION -->
     <footer>
    <div class="container footer-black">
        <div class="row">
@@ -503,26 +328,33 @@ Con Extricom, la calidad de señal, servicio y mejora en densidad de usuarios, n
        <h4>Todos los derechos reservados VTS 2015 | Design by: <a href="http://mixen.mx"><img src="http://mixen.mx/firma/logo-mixen.png" alt="Agencia Mixen"> mixen.mx</a></h4>
    </div>
    <br />
+    <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/googleMapInit.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/modalEffects.js"></script>
+    <!--<script src="js/modalEffects.js"></script>-->
+    <script src="js/overlay.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript">
             $(document).ready(function(){
                 $("#myCarousel2").carousel();
                 $('body').scrollspy();
+                $("a.overlay-ajax").click(function(){
+                    var url = $(this).attr("href");
+                    $(".overlay-section").load(url + ' #transmitter');
+                    return false;
+                });
             });
     </script>
-    <script>
+    <!--<script>
 			// this is important for IEs
 			var polyfilter_scriptpath = '/js/';
 	</script>
 	<script src="js/cssParser.js"></script>
-	<script src="js/css-filters-polyfill.js"></script>
+	<script src="js/css-filters-polyfill.js"></script>-->
 </footer>
 </body>
 </html>
