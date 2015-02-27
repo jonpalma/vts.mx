@@ -43,6 +43,10 @@ Text Domain: Mixen Communication & Web Technology
     background-image: none;
 }
 
+.navbar-default .navbar-collapse {
+    background-color: #fff;
+}
+
 /**  SECTIONS  **/
 #servicios, #nosotros, #clientes, #equipo, #contacto {
     padding-top: 40px;
@@ -289,6 +293,7 @@ footer {
     width: 156px;
     height: 56px;
     background-color: #1C5483;
+    border: 1px solid #1C5483;
     font: 400 18px / 22px Helvetica !important;
 }
 
@@ -305,6 +310,7 @@ footer {
     left: 0;
     background: url('../img/overlay-bg.jpg') no-repeat;
     z-index:3000;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 
@@ -412,7 +418,16 @@ footer {
 }
 /** end magnific popup effect **/
 
+/** MODAL **/
+#singlePageContent p, #singlePageContent ul {
+    color: #36567F;
+}
 
+#singlePageContent ul li{
+    list-style: square;
+    text-decoration: none;
+    margin-left: -20px;
+}
 
 /**  MISC  **/
 
@@ -530,6 +545,15 @@ body {
 
 .padding-top {
     padding-top: 180px;
+}
+
+#map-overlay {
+    position: relative;
+    z-index: 500;
+}
+
+.idle #map-overlay {
+    display: block;
 }
 
 /** MEDIA QUERIES **/

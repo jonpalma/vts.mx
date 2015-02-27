@@ -14,7 +14,6 @@
    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/carousel.css">
@@ -58,7 +57,7 @@
                         <br><br>
                         <img class="img-responsive center-block" src="img/xsep.png" alt="close image"  data-toggle="tooltip" title="Close">
                     </a>-->
-                    <button class="overlay-close btn-blue center-block">Regresar</button>
+                    <button class="overlay-close btn-blue center-block margin-bottom">Regresar</button>
                 </div>
             </div>
         </div><!-- the overlay element -->
@@ -155,35 +154,35 @@
                             <h1>Productos</h1>
                             <div class="row">
                                 <div class="col-sm-4 col-md 4">
-                                    <a href="cisco.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/cisco.jpg" alt="" class="img-responsive img-center"></a>
+                                    <a href="cisco.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/cisco.png" alt="" class="img-responsive img-center"></a>
                                 </div>
                                 <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-2"><img src="img/productos/emc2.jpg" alt="" class="img-responsive img-center"></a>
+                                    <a href="emc2.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/emc2.png" alt="" class="img-responsive img-center"></a>
                                 </div>
                                 <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-3"><img src="img/productos/palo-alto-networks.jpg" alt="" class="img-responsive img-center"></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-4"><img src="img/productos/solarwinds.jpg" alt="" class="img-responsive img-center"></a>
-                                </div>
-                                <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-5"><img src="img/productos/veeam.jpg" alt="" class="img-responsive img-center"></a>
-                                </div>
-                                <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-6"><img src="img/productos/vmware.jpg" alt="" class="img-responsive img-center"></a>
+                                    <a href="palo-alto.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/palo-alto-networks.png" alt="" class="img-responsive img-center"></a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-7"><img src="img/productos/extricom.jpg" alt="" class="img-responsive img-center"></a>
+                                    <a href="solarwinds.html"class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/solarwinds.png" alt="" class="img-responsive img-center"></a>
                                 </div>
                                 <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-8"><img src="img/productos/huawei.jpg" alt="" class="img-responsive img-center"></a>
+                                    <a href="veeam.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/veeam.png" alt="" class="img-responsive img-center"></a>
                                 </div>
                                 <div class="col-sm-4 col-md 4">
-                                    <a href="#productos" class="md-trigger" data-modal="modal-9"><img src="img/productos/netapp.jpg" alt="" class="img-responsive img-center"></a>
+                                    <a href="vmware.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/vmware.png" alt="" class="img-responsive img-center"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="extricom.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/extricom.png" alt="" class="img-responsive img-center"></a>
+                                </div>
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="huawei.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/huawei.png" alt="" class="img-responsive img-center"></a>
+                                </div>
+                                <div class="col-sm-4 col-md 4">
+                                    <a href="netapp.html" class="overlay-ajax trigger-overlay" data-modal="modal"><img src="img/productos/netapp.png" alt="" class="img-responsive img-center"></a>
                                 </div>
                             </div> 
                         </div>
@@ -268,7 +267,9 @@
         <div id="contacto">
             <br><br>
             <!-- BEGIN/MAP -->
-            <div class="container-fluid" id="googleMap"></div>
+            <div id="map-overlay">
+                <div class="container-fluid" id="googleMap"></div>
+            </div>
         <!-- END/MAP -->
             <div class="jumbotron bg-white">
                 <div class="container">
@@ -334,10 +335,10 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/googleMapInit.js"></script>
     <script src="js/classie.js"></script>
-    <!--<script src="js/modalEffects.js"></script>-->
     <script src="js/overlay.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/mobile-maphack.js"></script>
     <script type="text/javascript">
             $(document).ready(function(){
                 $("#myCarousel2").carousel();
@@ -349,12 +350,6 @@
                 });
             });
     </script>
-    <!--<script>
-			// this is important for IEs
-			var polyfilter_scriptpath = '/js/';
-	</script>
-	<script src="js/cssParser.js"></script>
-	<script src="js/css-filters-polyfill.js"></script>-->
 </footer>
 </body>
 </html>
