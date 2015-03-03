@@ -206,10 +206,10 @@
                       </div>
                        <div class="container">
                            <div class="row">
-                           <div class="col-sm-3 col-md-3"><img src="img/clientes/cima.png" alt="" class="img-responsive img-center"></div>
-                           <div class="col-sm-3 col-md-3"><img src="img/clientes/trw.png" alt="" class="img-responsive img-center"></div>
-                           <div class="col-sm-3 col-md-3"><img src="img/clientes/uach.png" alt="" class="img-responsive img-center"></div>
-                           <div class="col-sm-3 col-md-3"><img src="img/clientes/mixen.png" alt="" class="img-responsive img-center"></div>
+                           <div class="col-sm-3 col-md-3" data-toggle="popover" data-title="CIMA" data-container="body" data-placement="auto" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><img src="img/clientes/cima.png" alt="" class="img-responsive img-center"></div>
+                           <div class="col-sm-3 col-md-3" data-toggle="popover" data-title="TRW" data-container="body" data-placement="auto" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><img src="img/clientes/trw.png" alt="" class="img-responsive img-center"></div>
+                           <div class="col-sm-3 col-md-3" data-toggle="popover" data-title="UACH" data-container="body" data-placement="auto" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><img src="img/clientes/uach.png" alt="" class="img-responsive img-center"></div>
+                           <div class="col-sm-3 col-md-3" data-toggle="popover" data-title="MIXEN" data-container="body" data-placement="auto" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><img src="img/clientes/mixen.png" alt="" class="img-responsive img-center"></div>
                            </div>
                        </div>      
             </div>
@@ -347,6 +347,8 @@
                     $(".overlay-section").load(url + ' #transmitter');
                     return false;
                 });
+                $('[data-toggle="popover"]').popover({ trigger: "hover" });
+
             });
     </script>
 </footer>
