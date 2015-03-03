@@ -144,6 +144,22 @@ Text Domain: Mixen Communication & Web Technology
     padding: 200px 0;
 }
 
+.clients h2 {
+    font: 700 20px / 21px Helvetica;
+    color: #fff;
+    border: 5px solid #fff;
+    padding: 20px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.clients h2:hover {
+    color: #389be0;
+    background-color: #fff; 
+    
+}
+
 .team h1, .team p {
     margin-bottom: 80px;
 }
@@ -194,7 +210,6 @@ footer {
 
 .footer-rights {
     background-color: #323232;
-    height: 39px;
     margin: 10px 0px;
 }
 .footer-rights h4 {
@@ -204,7 +219,7 @@ footer {
     font-style: italic;
     text-align: center;
     margin: 0px;
-    padding: 10px 0px 5px;
+    padding: 10px 0px;
 }
 
 .footer-rights a { 
