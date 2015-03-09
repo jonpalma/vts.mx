@@ -22,11 +22,12 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .navbar-nav > li > a, .dropdown-menu > li > a {
-    color: #000060 !important;
+    color: #999 !important;
     font-weight: 700;
     font-family: Helvetica;
     line-height: 20px;
     padding: 30px 10px;
+    opacity: 0.5;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
@@ -35,8 +36,13 @@ Text Domain: Mixen Communication & Web Technology
 
 .navbar-nav >li.active a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus, 
 .dropdown-menu > li.active a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
-    color: #fff !important;
-    background-color: #1c5584!important;
+    color: #000060 !important;
+    background-image: none;
+    background-color: #fff !important;
+    box-shadow: none !important;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+
 }
 
 .navbar-default .navbar-nav > .open > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
