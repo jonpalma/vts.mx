@@ -110,21 +110,21 @@ Text Domain: Mixen Communication & Web Technology
     margin-bottom: 0;
 }
 
-.bg-blue h1, .bg-blue h5, .bg-blue p {
-    color: #ffffff;
+.bg-blue h1, .bg-blue h5, .bg-blue p, .parallax-container h1, .parallax-container h5, .parallax-container p {
+    color: #fff;
 }
 
-.bg-blue h1 {
+.bg-blue h1, .parallax-container h1 {
     border-bottom: 1px solid #fff;
 }
 
-.bg-blue h5 {
+.bg-blue h5, .parallax-container h5 {
     text-align: center;
     font: 300 18px / 21px Helvetica;
     margin: 20px auto 10px;
 }
 
-.bg-blue p, .team p {
+.bg-blue p, .parallax-container p, .team p {
     width: 740px;
     line-height: 21px;
     font-size: 14px;
@@ -450,6 +450,31 @@ footer {
     margin-left: -20px;
 }
 
+/** PARALLAX **/
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px; 
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; 
+}
+
+.parallax img {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    background-position: center; 
+}
+
 /**  MISC  **/
 
 body {
@@ -590,7 +615,7 @@ body {
     width: 100%;
 }
     
-.bg-blue p, .team p {
+.bg-blue p, .parallax-container p, .team p {
     width: 100%;
 }
     

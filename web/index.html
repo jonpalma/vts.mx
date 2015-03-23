@@ -14,6 +14,7 @@
    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
     <!-- CSS -->
+    <!--<link rel="stylesheet" href="css/materialize.min.css">-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -99,23 +100,23 @@
                               <h1>Servicios</h1>
                           </div>
 
-                            <div class="col-sm-3 col-md 3">
+                            <div class="col-sm-3 col-md 3" data-sr="wait 0.2s, enter left, over 1s, ease-in 50px">
                                 <img src="img/wifi.png" alt="Site survey Wifi" class="img-responsive img-center">
                                 <h5>Site survey Wifi</h5>
                                 <p>El site survey es el proceso de planear, diseñar u optimizar una red wireless, en particular el estándar 802.11 de red, para proveer de cobertura inalámbrica a una sección especificada donde se requiere la misma.</p>
                             </div>
-                            <div class="col-sm-3 col-md 3">
+                            <div class="col-sm-3 col-md 3" data-sr="wait 0.4s, enter bottom, over 1s, ease-in 50px">
                                 <img src="img/data-center.png" alt="Diseño de Data Center" class="img-responsive img-center">
                                 <h5>Diseño de Data Center</h5>
                                 <p>En VTS te podemos ayudar a la Consolidación de cómputo, redes, servidores y almacenamiento, con puntos claves como Networking para Data Center, Almacenamiento unificado, Virtualización de servidores y escritorios, seguridad en la red y Optimización del Centro de Datos.</p>
                             </div>
-                            <div class="col-sm-3 col-md 3">
+                            <div class="col-sm-3 col-md 3" data-sr="wait 0.6s, enter right, over 1s, ease-in 50px">
                                 <img src="img/soporte.png" alt="Soporte" class="img-responsive img-center">
                                 <h5>Soporte</h5>
                                 <p>Otorgamos soporte Certificado en las siguientes marcas:</p>
                                     <p>Palo Alto Networks, Cisco, Emc, Vmware, Veeam, Huawei, Extricom</p>
                             </div>
-                            <div class="col-sm-3 col-md 3">
+                            <div class="col-sm-3 col-md 3" data-sr="wait 0.8s, enter top, over 1s, ease-in 50px">
                                 <img src="img/analisis-trafico.png" alt="Analisis forense de trafico de red" class="img-responsive img-center">
                                 <h5>Analisis forense de trafico de red</h5>
                                 <p>Captura y análisis de paquetes para la reconstrucción de eventos que afecta a equipos terminales y de red, el objetivo es apoyar la recuperación y protección de tu infraestructura.</p>
@@ -127,12 +128,12 @@
         <!-- END/SERVICES -->
         <!-- BEGIN/ABOUT US -->
         <div id="nosotros">
-            <svg id="whiteTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
-				<path d="M0 0 L0 40 L20 40 L50 100 L80 40 L100 40 L100 0 Z" />
-		    </svg>
-            <div class="jumbotron bg-blue">
+            <div class="parallax-container">
+              <div class="parallax">
+                  <img src="img/banner/1.jpg" alt="nosotros vts">
+              </div>
                <div class="container">
-                   <div class="row content">
+                   <div class="row content margin-top" data-sr="wait 0.2s, enter bottom, over 1s, ease-in 50px">
                         <h1>Nosotros</h1>
                         <h5>VTS Company</h5>
                         <p>Todas las soluciones que manejamos son lleve en mano, para su comodidad. <br /><br /> Como adicional, también realizamos servicio de análisis, Diseño, Consultoría, Implementación y Troubleshooting para tecnologías de Cisco Networking. Telefonía IP, Ruteo y Ambientes virtuales. En el caso de Troubleshooting, no incluye appliance de EMC, ya que ésto debe ser directamente con el fabricante.</p>
@@ -140,12 +141,8 @@
                </div>
             </div>
         </div>
-        
         <!-- END/ABOUT US -->
         <!-- BEGIN/PRODUCTS -->
-        <svg id="blueTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
-				<path d="M0 0 L0 40 L20 40 L50 100 L80 40 L100 40 L100 0 Z" />
-        </svg>
         <div id="productos">
             <div class="jumbotron bg-white">
                     <div class="container products">
@@ -273,7 +270,7 @@
         <!-- END/MAP -->
             <div class="jumbotron bg-white">
                 <div class="container">
-                    <div class="row content">
+                    <div class="row content" data-sr="wait 0.2s, enter bottom, over 1s, ease-in 50px">
                         <h1>Contáctanos</h1>
                         <form id="ajax-contact" class="form-horizontal" method="post" action="mailer.php">
                         <div class="form-group">
@@ -331,6 +328,8 @@
    <br />
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/scrollReveal.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/googleMapInit.js"></script>
@@ -349,8 +348,12 @@
                     return false;
                 });
                 $('[data-toggle="popover"]').popover({ trigger: "hover" });
+                $('.parallax').parallax();
 
             });
+    </script>
+    <script type="text/javascript">
+            window.sr = new scrollReveal();
     </script>
 </footer>
 </body>
