@@ -187,6 +187,51 @@ Text Domain: Mixen Communication & Web Technology
     text-align: center;
 }
 
+/** PRODUCTS **/
+.red, .orange, .blue {
+    position: relative; 
+}
+
+.caption {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.caption a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.caption a p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.caption:hover {
+    opacity: 1;
+}
+
+.caption .valign {
+    position: relative;
+    top: 55%;
+}
+
+.red .caption:hover {
+    background-color: rgba(214, 67, 60, .9);
+}
+
+.orange .caption:hover {
+    background-color: rgba(212, 111, 57, .9);
+}
+
+.blue .caption:hover {
+    background-color: rgba(57, 92, 120, .9);
+}
+
 /** FOOTER **/
 footer {
     background: #3d3d3d;
