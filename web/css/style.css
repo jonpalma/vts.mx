@@ -187,7 +187,6 @@ Text Domain: Mixen Communication & Web Technology
     text-align: center;
 }
 
-<<<<<<< HEAD
 /** BANNER **/
 .carousel-control.right {
     background-image: none !important; 
@@ -197,7 +196,6 @@ Text Domain: Mixen Communication & Web Technology
     background-image: none !important; 
 }
 
-=======
 /** PRODUCTS **/
 .red, .orange, .blue {
     position: relative; 
@@ -242,7 +240,6 @@ Text Domain: Mixen Communication & Web Technology
 .blue .caption:hover {
     background-color: rgba(57, 92, 120, .9);
 }
->>>>>>> origin/master
 
 /** FOOTER **/
 footer {
