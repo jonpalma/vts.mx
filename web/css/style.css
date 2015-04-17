@@ -238,7 +238,8 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .blue .caption:hover {
-    background-color: rgba(57, 92, 120, .9);
+    background-color: rgba(9, 51, 85, .8);
+    transition: .5s;
 }
 
 /** FOOTER **/
