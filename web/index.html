@@ -235,7 +235,88 @@
             </div>
         </div>
         <!-- END/PRODUCTS -->
-        <!-- BEGIN/CLIENTS -->
+        <!-- BEGIN/EXPERIENCE -->
+        <div id="clientes">
+            <br><br>
+            <div class="jumbotron bg-white no-margin-bottom no-padding-bottom">
+            <div class="container">
+                <div class="row clients content">
+                    <h1 class="block">Experiencia</h1>
+                    <img src="img/border-bottom-arrow.png" alt="" class="img-responsive img-center">
+                </div>
+            </div>
+        </div>
+            <div class="jumbotron bg-blue clients">
+                      <div class="arrow">
+                          <img src="img/down-arrow.png" alt="" class="img-responsive img-center">
+                      </div>
+                       <div class="container">
+                           <div class="row">
+                               <div role="tabpanel">
+                                  <!-- Tab panes -->
+                                  <div class="col-sm-8">
+                                      <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade in active" id="gobierno">
+                                            <ul class="icons">
+                                                <li class="redes">Redes</li>
+                                                <li class="firewall">Firewall</li>
+                                                <li class="almacenamiento">Almacenamiento</li>
+                                                <li class="virtualizacion">Virtualización</li>
+                                                <li class="servidores">Servidores</li>
+                                            </ul>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="privado">
+                                            <ul class="icons">
+                                                <li class="redes">Redes</li>
+                                                <li class="firewall">Firewall</li>
+                                                <li class="almacenamiento">Almacenamiento</li>
+                                                <li class="virtualizacion">Virtualización</li>
+                                                <li class="servidores">Servidores</li>
+                                                <li class="backup">Backup</li>
+                                                <li class="voz">Voz/ip</li>
+                                                <li class="wifi">Wifi</li>
+                                                <li class="monitoreo">Monitoreo</li>
+                                            </ul>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="salud">
+                                            <ul class="icons">
+                                                <li class="redes">Redes</li>
+                                                <li class="firewall">Firewall</li>
+                                                <li class="voz">Voz/ip</li>           </ul>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="financiero">
+                                            <ul class="icons">
+                                                <li class="redes">Redes</li>
+                                                <li class="firewall">Firewall</li>
+                                                <li class="almacenamiento">Almacenamiento</li>
+                                                <li class="virtualizacion">Virtualización</li>
+                                                <li class="servidores">Servidores</li>
+                                                <li class="backup">Backup</li>
+                                                <li class="voz">Voz/ip</li>
+                                                <li class="wifi">Wifi</li>
+                                                <li class="monitoreo">Monitoreo</li>
+                                                <li class="token">Seguridad por token</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <!-- Nav tabs -->
+                                  <div class="col-sm-4">
+                                      <ul class="nav nav-pills nav-stacked" role="tablist">
+                                        <li role="presentation" class="active"><a href="#gobierno" aria-controls="gobierno" role="tab" data-toggle="tab">Gobierno</a></li>
+                                        <li role="presentation"><a href="#privado" aria-controls="privado" role="tab" data-toggle="tab">Privado</a></li>
+                                        <li role="presentation"><a href="#salud" aria-controls="salud" role="tab" data-toggle="tab">Salud</a></li>
+                                        <li role="presentation"><a href="#financiero" aria-controls="financiero" role="tab" data-toggle="tab">Financiero</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="clearfix"></div>
+                           </div>
+                      </div>
+                  </div>      
+            </div>
+        </div>
+        <!-- END/EXPERIENCE -->
+        <!-- BEGIN/CLIENTS --
         <div id="clientes">
             <br><br>
             <div class="jumbotron bg-white no-margin-bottom no-padding-bottom">
@@ -398,6 +479,18 @@
                 });
                 $('[data-toggle="popover"]').popover({ trigger: "hover" });
                 $('.parallax').parallax();
+                $('.nav-pills > li ').hover( function(){
+                    if($(this).hasClass('hoverblock'))
+                        return;
+                    else
+                    $(this).find('a').tab('show');
+               });
+
+
+               $('.nav-pills > li').find('a').click( function(){
+                $(this).parent()
+                    .siblings().addClass('hoverblock');
+               });
 
             });
     </script>

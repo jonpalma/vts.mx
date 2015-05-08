@@ -154,11 +154,11 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .clients .container .row {
-    padding: 200px 0;
+    padding: 80px 0;
 }
 
-.clients h2 {
-    font: 700 20px / 21px Helvetica;
+.clients h2, .clients ul.nav-stacked li a {
+    font: 700 30px / 21px Helvetica;
     color: #fff;
     border: 5px solid #fff;
     padding: 20px 10px;
@@ -167,10 +167,22 @@ Text Domain: Mixen Communication & Web Technology
     
 }
 
-.clients h2:hover {
+.clients ul.nav-stacked li {
+    margin: 40px 0;
+}
+
+.clients h2:hover, .clients ul.nav-stacked li a:hover, .clients ul.nav-stacked li.active a {
     color: #389be0;
     background-color: #fff; 
     
+}
+
+.clients ul.icons li {
+    color: #fff;
+    font: 400 20px / 21px Helvetica;
+    text-decoration: none;
+    margin: 30px 0;
+    list-style: none;
 }
 
 .team h1, .team p {
