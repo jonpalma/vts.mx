@@ -303,10 +303,10 @@
                                   <!-- Nav tabs -->
                                   <div class="col-sm-4">
                                       <ul class="nav nav-pills nav-stacked" role="tablist">
-                                        <li role="presentation" class="active"><a href="#gobierno" aria-controls="gobierno" role="tab" data-toggle="tab">Gobierno</a></li>
-                                        <li role="presentation"><a href="#privado" aria-controls="privado" role="tab" data-toggle="tab">Privado</a></li>
-                                        <li role="presentation"><a href="#salud" aria-controls="salud" role="tab" data-toggle="tab">Salud</a></li>
-                                        <li role="presentation"><a href="#financiero" aria-controls="financiero" role="tab" data-toggle="tab">Financiero</a></li>
+                                        <li role="presentation" id="gob" class="active"><a href="#gobierno" aria-controls="gobierno" role="tab" data-toggle="tab">Gobierno</a></li>
+                                        <li role="presentation" id="priv"><a href="#privado" aria-controls="privado" role="tab" data-toggle="tab">Privado</a></li>
+                                        <li role="presentation" id="sal"><a href="#salud" aria-controls="salud" role="tab" data-toggle="tab">Salud</a></li>
+                                        <li role="presentation" id="fin"><a href="#financiero" aria-controls="financiero" role="tab" data-toggle="tab">Financiero</a></li>
                                       </ul>
                                   </div>
                                   <div class="clearfix"></div>
@@ -490,6 +490,26 @@
                $('.nav-pills > li').find('a').click( function(){
                 $(this).parent()
                     .siblings().addClass('hoverblock');
+               });
+                
+               $('#gob').hover(function(){
+                   $('.bg-blue.clients').addClass('background1');
+                   $('.bg-blue.clients').removeClass('background2');
+               });
+               
+               $('#priv').hover(function(){
+                   $('.bg-blue.clients').addClass('background2');
+                   $('.bg-blue.clients').removeClass('background1');
+               });
+                
+               $('#sal').hover(function(){
+                   $('.bg-blue.clients').addClass('background1');
+                   $('.bg-blue.clients').removeClass('background2');
+               });
+               
+               $('#fin').hover(function(){
+                   $('.bg-blue.clients').addClass('background2');
+                   $('.bg-blue.clients').removeClass('background1');
                });
 
             });

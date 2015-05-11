@@ -396,6 +396,63 @@ footer {
     margin-top: 10px;
 }
 
+/** BACKGROUNDS **/
+.background1 {
+    background: url('../img/banner/3.jpg') !important;
+}
+
+.background2 {
+    background: url('../img/banner/3%20copia.jpg') !important;
+}
+
+/** ICONS **/
+.redes::before, .firewall::before, .backup::before, .voz::before, .wifi:before, .almacenamiento::before, .virtualizacion::before, .servidores::before, .monitoreo::before, .token::before {
+    margin-right: 20px;
+    width: 35px;
+    height: 37px;
+   vertical-align: -10px;
+}
+
+.redes::before {
+    content: url('../img/iconos/redes.png');
+}
+
+.firewall::before {
+    content: url('../img/iconos/firewall.png');
+}
+
+.backup::before {
+    content: url('../img/iconos/Backup.png');
+}
+
+.voz::before {
+    content: url('../img/iconos/voz.png');
+}
+
+.wifi::before {
+     content: url('../img/iconos/wifi.png');   
+}
+
+.almacenamiento::before {
+    content: url('../img/iconos/almacenamiento.png');   
+}
+
+.virtualizacion::before {
+    content: url('../img/iconos/virtualizacion.png');   
+}
+
+.servidores::before {
+    content: url('../img/iconos/servidores.png');   
+}
+
+.monitoreo::before {
+    content: url('../img/iconos/monitoreo.png');   
+}
+
+.token::before {
+    content: url('../img/iconos/seguridad-por-token.png');   
+}
+
 /** OVERLAY **/
 .overlay {
     position: fixed;
