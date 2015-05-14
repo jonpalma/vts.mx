@@ -113,7 +113,7 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .bg-blue {
-    background-color: #389be0;
+    background: url('../img/experiencia/gobierno.jpg') #000 !important;
     margin-bottom: 0;
 }
 
@@ -154,7 +154,8 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .clients .container .row {
-    padding: 80px 0;
+    padding: -20px 0 0px 0;
+    
 }
 
 .clients h2, .clients ul.nav-stacked li a {
@@ -181,7 +182,7 @@ Text Domain: Mixen Communication & Web Technology
     color: #fff;
     font: 400 20px / 21px Helvetica;
     text-decoration: none;
-    margin: 30px 0;
+    margin: 10px 0;
     list-style: none;
 }
 
@@ -398,11 +399,19 @@ footer {
 
 /** BACKGROUNDS **/
 .background1 {
-    background: url('../img/banner/3.jpg') !important;
+    background: url('../img/experiencia/gobierno.jpg') #000 !important;
 }
 
 .background2 {
-    background: url('../img/banner/3%20copia.jpg') !important;
+    background: url('../img/experiencia/privado.jpg') #000 !important;
+}
+
+.background3 {
+    background: url('../img/experiencia/salud.jpg') #000 !important;
+}
+
+.background4 {
+    background: url('../img/experiencia/financiero.jpg') #000 !important;
 }
 
 /** ICONS **/

@@ -96,7 +96,8 @@
         </div>
         <div class="divide"></div>
         <!-- BEGIN SERVICES -->
-        <div id="servicios">
+        <div id="servicios"></div> <br><br>
+        <div>
              <div class="jumbotron bg-white">
                     <div class="container">
                         <div class="row content">
@@ -391,14 +392,15 @@
         -->
         <!-- END/TEAM -->
         <!-- BEGIN/CONTACT -->
-        <div id="contacto">
+        <div>
             <br><br>
             <!-- BEGIN/MAP -->
             <div id="map-overlay">
                 <div class="container-fluid" id="googleMap"></div>
             </div>
         <!-- END/MAP -->
-            <div class="jumbotron bg-white">
+           <div id="contacto"></div>
+            <div class="jumbotron bg-white" >
                 <div class="container">
                     <div class="row content" data-sr="wait 0.2s, enter bottom, over 1s, ease-in 50px">
                         <h1>Contáctanos</h1>
@@ -495,21 +497,29 @@
                $('#gob').hover(function(){
                    $('.bg-blue.clients').addClass('background1');
                    $('.bg-blue.clients').removeClass('background2');
+                   $('.bg-blue.clients').removeClass('background3');
+                   $('.bg-blue.clients').removeClass('background4');
                });
                
                $('#priv').hover(function(){
                    $('.bg-blue.clients').addClass('background2');
                    $('.bg-blue.clients').removeClass('background1');
+                   $('.bg-blue.clients').removeClass('background3');
+                   $('.bg-blue.clients').removeClass('background4');
                });
                 
                $('#sal').hover(function(){
-                   $('.bg-blue.clients').addClass('background1');
+                   $('.bg-blue.clients').addClass('background3');
+                   $('.bg-blue.clients').removeClass('background1');
                    $('.bg-blue.clients').removeClass('background2');
+                   $('.bg-blue.clients').removeClass('background4');
                });
                
                $('#fin').hover(function(){
-                   $('.bg-blue.clients').addClass('background2');
+                   $('.bg-blue.clients').addClass('background4');
                    $('.bg-blue.clients').removeClass('background1');
+                   $('.bg-blue.clients').removeClass('background2');
+                   $('.bg-blue.clients').removeClass('background3');
                });
 
             });
