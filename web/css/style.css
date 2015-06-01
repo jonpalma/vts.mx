@@ -113,8 +113,9 @@ Text Domain: Mixen Communication & Web Technology
 }
 
 .bg-blue {
-    background: url('../img/experiencia/gobierno.jpg') #000 !important;
+    background: url('../img/experiencia/gobierno.jpg') no-repeat center center fixed !important;
     margin-bottom: 0;
+    min-height: 600px;
 }
 
 .bg-blue h1, .bg-blue h5, .bg-blue p, .parallax-container h1, .parallax-container h5, .parallax-container p {
@@ -410,19 +411,27 @@ footer {
 
 /** BACKGROUNDS **/
 .background1 {
-    background: url('../img/experiencia/gobierno.jpg') #000 !important;
+    background: url('../img/experiencia/gobierno.jpg') no-repeat center center fixed !important; 
 }
 
 .background2 {
-    background: url('../img/experiencia/privado.jpg') #000 !important;
+    background: url('../img/experiencia/privado.jpg') no-repeat center center fixed !important; 
 }
 
 .background3 {
-    background: url('../img/experiencia/salud.jpg') #000 !important;
+    background: url('../img/experiencia/salud.jpg') no-repeat center center fixed !important; 
 }
 
 .background4 {
-    background: url('../img/experiencia/financiero.jpg') #000 !important;
+    background: url('../img/experiencia/financiero.jpg') no-repeat center center fixed !important; 
+}
+
+.background1, .background2, .background3, .background4, .bg-blue {
+    background-color: #000;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
 }
 
 /** ICONS **/
@@ -601,11 +610,12 @@ footer {
     margin-left: -20px;
 }
 
-/** PARALLAX **/
+/* Modified Parallax CSS by Chris */
 .parallax-container {
-  position: relative;
-  overflow: hidden;
-  height: 500px; 
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    height: auto;
 }
 
 .parallax {
@@ -621,8 +631,8 @@ footer {
     display: none;
     position: absolute;
     bottom: 0;
+    min-width: 1920px;
     width: 100%;
-    min-height: 100%;
     background-position: center; 
 }
 
