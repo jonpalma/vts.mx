@@ -10,6 +10,8 @@ Text Domain: Mixen Communication & Web Technology
 
 /**  MENU  **/
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 .navbar {
     max-height: 168px;
     background: #ffffff;
@@ -765,6 +767,28 @@ span.blue {
     color: #0C9BE9;
 }
 
+/* BEGIN REGISTRO */
+
+#registro .container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#registro h1 {
+	font: 300 30.55px Open Sans;
+	text-align: center;
+}
+
+#registro input, #registro button {
+	margin-top: 40px;
+}
+
+#form-messages-registro {
+	margin-top: 30px;
+}
+
+/* END REGISTRO */
+
 /** MEDIA QUERIES **/
 
 @media (max-width: 767px) {
@@ -882,6 +906,10 @@ span.blue {
 .carousel-caption h1{
     font-size: 50px;
     letter-spacing: 5px;
+}
+
+#registro .border {
+	border-right: rgba(53, 53, 53, 0.2) solid 1px;
 }
     
 }
